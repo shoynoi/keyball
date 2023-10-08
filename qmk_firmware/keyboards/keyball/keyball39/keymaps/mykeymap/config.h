@@ -35,4 +35,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define TAP_CODE_DELAY 5
 #define DYNAMIC_KEYMAP_LAYER_COUNT 7
-#define PERMISSIVE_HOLD
+#define QUICK_TAP_TERM 0
+#define TAPPING_TERM 180
