@@ -29,7 +29,7 @@ jobs:
 
     strategy:
       matrix:
-        keyboard: [ keyball39 ]
+        keyboard: [ keyball39, keyball44 ]
         keymap: [ test, default, via, mykeymap ]
         include:
           - keyboard: keyball46
@@ -76,6 +76,9 @@ jobs:
 
     - uses: actions/download-artifact@v3
       with: { name: keyball39-firmwares }
+
+    - uses: actions/download-artifact@v3
+      with: { name: keyball44-firmwares }
 
     - name: List size of firmwares
       run: |
